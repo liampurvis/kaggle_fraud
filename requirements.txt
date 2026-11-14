@@ -1,0 +1,18 @@
+# Requirements for fraud_rnd.ipynb (and holder.py).
+# Lower bounds are the versions the code was tested against (a conda env with Python 3.10); newer releases should work.
+# The notebook's own kernel (".venv") is not in this directory, so the versions are not pinned exactly.
+
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11              # betabinom in the feature-subset simulation
+scikit-learn>=1.3        # IsolationForest, RandomForestClassifier, PLSRegression, NearestNeighbors
+lightgbm>=4.1
+joblib>=1.3              # parallel tuning sweeps
+matplotlib>=3.8
+seaborn>=0.13
+pyarrow>=14.0            # black box holdout is written/read as parquet
+kagglehub                # downloads the credit-card fraud dataset (dylanmoraes/credit-card-fraud-dataset)
+
+# Running the notebook
+ipython>=8
+ipykernel>=6
