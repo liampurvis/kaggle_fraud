@@ -1,4 +1,4 @@
-# Fraud detection R&D (`fraud_rnd.ipynb`)
+# Fraud detection R&D (`interchecks_fraud.ipynb`)
 
 Catching fraud in the PaySim-style credit-card dataset (6.4M transactions, 31 days). The notebook builds features,
 selects them, tunes a LightGBM model and a PLS + nearest-neighbour model, and validates both day by day against the
@@ -11,7 +11,7 @@ I developoed this in a 96 core ec2 instance. I parallelized several of the steps
 
 | File | What it is |
 |---|---|
-| `fraud_rnd.ipynb` | The notebook. Run this. |
+| `interchecks_fraud.ipynb` | The notebook. Run this. |
 | `requirements.txt` | Python dependencies. |
 
 ## Setup
